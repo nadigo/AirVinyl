@@ -40,7 +40,6 @@ echo "Starting sox monitoring SOX pid=$! monitorFile=$monitorFile @ $(date)" >> 
 
 
 while [ true ]; do 
-            var1=$var2+1
             until [ "$var1" != "$var2" ]; do
                 var1=$(stat -c %s $monitorFile)
                 sleep 0.5
