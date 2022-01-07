@@ -33,7 +33,7 @@ rm /tmp/raop.pid 2> /dev/null
 # make sure default alsa capturing device is 'mixed' with dsnoop for simultaneous access 
 /bin/sox -V2 -q \
 -r 48k -b 16 -c 2 -t alsa default \
--r 44100 -b 16 -c 2 -t wav -t wav $monitorFile \
+-r 44100 -b 16 -c 2 -t wav $monitorFile \
 silence 1 0.1 3% -1 3.0 3% &
 sleep 1
 echo "Starting sox monitoring SOX pid=$! monitorFile=$monitorFile @ $(date)" >> $log 
