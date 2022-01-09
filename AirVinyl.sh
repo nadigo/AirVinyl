@@ -12,7 +12,7 @@ exec 2>&1 | tee -a $log
 # /// ToDo ////
 # build a UI to detect and select Airplay speakers 
 # avahi-browse _raop._tcp -rfktp | sed '/\+;wlan/d' | sed '/IPv6/d' | sed -e 's/.*\(;_raop\._tcp;local;\)\(.*\)\(;\).*/\2/'
-playerIp="192.168.4.192"
+playerIp="192.168.4.12"
 port=7000
 vol=40
 
